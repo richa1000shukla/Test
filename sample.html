@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Style the body */
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+
+      /* Header/logo Title */
+      .header {
+        flex: 75%;
+        padding: 60px;
+        text-align: center;
+        background: #bc1a1a;
+        color: white;
+      }
+      .ads {
+        flex: 25%;
+        padding: 60px;
+        text-align: center;
+        background: #bc1a1a;
+        color: white;
+      }
+
+      /* Column container */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+
+      /* Sidebar/left column */
+      .side {
+        flex: 30%;
+        background-color: #c65d12;
+        padding: 20px;
+      }
+
+      /* Main column */
+      .main {
+        flex: 70%;
+        background-color: rgb(78, 13, 66);
+        padding: 10px;
+      }
+
+      /* Footer/left column */
+      .left {
+        flex: 25%;
+        background-color: blue;
+        padding: 20px;
+      }
+
+      /* Footer/center column */
+      .center {
+        flex: 50%;
+        background-color: blue;
+        padding: 20px;
+      }
+
+      /* Footer/right column */
+      .right {
+        flex: 25%;
+        background-color: blue;
+        padding: 20px;
+      }
+
+      /* Navigation */
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top section -->
+    <div class="row">
+      <div class="header">
+        <h1>Website Name</h1>
+      </div>
+      <div class="ads">
+        <h1>Ads</h1>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <!-- The flexible grid (content) -->
+    <div class="row">
+      <div class="side">
+        <h2>About Me</h2>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      </div>
+      <div class="main">
+        <h2>TITLE HEADING</h2>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco.
+        </p>
+        <br />
+        <h2>TITLE HEADING</h2>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+      <div class="left">
+        <h2>Left</h2>
+      </div>
+      <div class="center">
+        <h2>Center</h2>
+      </div>
+      <div class="right">
+        <h2>Right</h2>
+      </div>
+    </div>
+  </body>
+</html>
